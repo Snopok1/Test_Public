@@ -1,0 +1,11 @@
+money = int(input('Введите сумму:'))
+m = money
+
+per_cent = {'ТКБ': 5.6, 'СКБ': 5.9, 'ВТБ': 4.28, 'СБЕР': 4.0}
+a = list(per_cent.values())
+
+deposit = [a[0]*m/100, a[1]*m/100, a[2]*m/100, a[3]*m/100]
+
+print(', '.join(map(str,deposit)))
+
+print('Максимальная сумма, которую вы можете заработать -', max(deposit))
